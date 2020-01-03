@@ -1,6 +1,7 @@
 # Objects in JavaScript
 
-Photo of ENIAC here, with names.
+![A black and white photo of Jean Jennings, Marlyn Wescoff, and Ruth Lichterman
+programming the ENIAC computer.](blob/master/lesson-planning/eniac.jpg)
 
 ## Representing real-world data in JavaScript
 
@@ -275,5 +276,16 @@ console.log(colossusOperators);
 
 ```
 
+## References and further reading
+
+- [Defiintion of primitive data types, from
+  MDN](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+
+- [Definition of JS objects from
+  MDN](https://developer.mozilla.org/en-US/docs/Glossary/object)
+
+- [Recoding gender: Women's changing participation in
+  computing](https://drive.google.com/file/d/1XA7-ezuzRLpFI6IV6UuGSAT4k0wUVgkh/view)
+  by Janet Abbate, chapter 1 (on the history of the ENIAC and COLOSSUS).
 
 
