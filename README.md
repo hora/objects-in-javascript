@@ -3,6 +3,9 @@
 ![A black and white photo of Jean Jennings, Marlyn Wescoff, and Ruth Lichterman
 programming the ENIAC computer.](https://github.com/hora/lhl-w1d3/blob/master/lesson-planning/eniac.jpg)
 
+Jean Jennings, Marlyn Wescoff, and Ruth Licterman programming the ENIAC
+computer. Image from the University of Pennsylvania Archives.
+
 ## Representing real-world data in JavaScript
 
 ```js
@@ -278,7 +281,7 @@ console.log(colossusOperators);
 
 ## References and further reading
 
-- [Defiintion of primitive data types, from
+- [Defintion of primitive data types, from
   MDN](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 
 - [Definition of JS objects from
@@ -286,6 +289,6 @@ console.log(colossusOperators);
 
 - [Recoding gender: Women's changing participation in
   computing](https://drive.google.com/file/d/1XA7-ezuzRLpFI6IV6UuGSAT4k0wUVgkh/view)
-  by Janet Abbate, chapter 1 (on the history of the ENIAC and COLOSSUS).
+  by Janet Abbate, chapter 1
 
 
