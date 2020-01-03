@@ -1,7 +1,7 @@
 # Objects in JavaScript
 
 ![A black and white photo of Jean Jennings, Marlyn Wescoff, and Ruth Lichterman
-programming the ENIAC computer.](blob/master/lesson-planning/eniac.jpg)
+programming the ENIAC computer.](https://github.com/hora/lhl-w1d3/blob/master/lesson-planning/eniac.jpg)
 
 ## Representing real-world data in JavaScript
 
