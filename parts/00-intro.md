@@ -7,7 +7,5 @@ primitive data types and more complex data structures, in particular, arrays and
 objects. We're then going to learn a few basic concepts about working with
 objects in JavaScript.
 
-## Scenario: Building an 'IMDB' for computing
-
-<see ENIAC photo>
+## Scenario: We're building a timeline of computing history for a museum
 

@@ -18,5 +18,6 @@ associative arrays.
 
 Functions that are properties of an objects are usually called __methods__.
 
+To access the object itself from within a method, you need to use the `this`
+keyword.
 
-    - 'this' keyword for accessing other object properties within methods

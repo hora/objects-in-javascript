@@ -82,18 +82,7 @@ console.log(eniacDevelopers.length);
 
 // What if we wanted to print to the console only the programmers?
 
-// Algorithm idea:
-//  - declare a result array
-//  - loop through all the strings in eniacDevelopers
-//      - check if the string contains the sub-string '(programmer)'
-//          - if it does, push it to the result array
-//  - print out the contents of the result array
-//
-
 // This is a difficult problem to solve with an array of strings.
-// Also, what if we wanted to keep track not only of their names and roles, but
-// other information, such as the multiple names the programmers had throughout
-// their lives?
 ```
 
 ## Enter: Objects
@@ -155,6 +144,17 @@ colossusData.mathematicians = ['Alan Turing', 'Max Newman'];
 colossusData['operators'] = ['Dorothy Du Boisson', 'Jean Beech'];
 
 console.log(colossusData);
+
+// If values inside objects are data structures themselves (like arrays), we can
+chain out lookups
+// To print 'Jean Jennings' we would:
+
+console.log(programmers[0]);
+
+// We can also set values the same way. To add another name to the operators
+array:
+colossusData.operators.push('Eleanor Ireland');
+console.log(earlyComputers.colossus);
 ```
 
 ### Dot vs bracket notation when accessing object properties
@@ -276,6 +276,58 @@ earlyComputers.getWorkers = function(computer, role) {
 
 let colossusOperators = earlyComputers.getWorkers('colossus', 'operators');
 console.log(colossusOperators);
+
+```
+
+### The full example we built in class
+
+```js
+let doSomeStuff = function() {
+    /// ....
+    /// ...
+    return [1, 2, 3];
+}
+
+let earlyComputers = {
+    eniac: {
+        computerName: 'ENIAC',
+        yearOperational: 1945,
+        leadership: ['John Mauchly', 'J. Presper Eckert'],
+        engineers: ['J. Presper Eckert'],
+        programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Bilas', 'Kay McNulty', 'Marlyn Wescoff', 'Ruth Lictherman']
+    },
+    colossus: {
+        computerName: 'COLOSSUS',
+        yearOperational: 1943,
+        mathematicians: ['Alan Turing', 'Max Newman'],
+        operators: ['Dorothy Du Boisson', 'Jean Beech']
+    },
+    describe: function() {
+        console.log('This is some data about some early computers.')
+    },
+    printOccupationForComputer: function(occupation, computer) {
+        console.log(this[computer][occupation]);
+    },
+    // the value referenced by the key someThing will be the result of
+    calling doSomeStuff – notice the brackets
+    someThing: doSomeStuff()
+};
+
+
+earlyComputers.describe();
+
+let printProgrammers = function() {
+    console.log(this.eniac.programmers);
+}
+
+earlyComputers.printProgrammers = printProgrammers;
+earlyComputers.printProgrammers();
+
+let operators = 'operators'
+earlyComputers.printOccupationForComputer(operators, 'colossus');
+
+
+console.log(earlyComputers);
 
 ```
 

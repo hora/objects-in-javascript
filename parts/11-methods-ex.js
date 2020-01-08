@@ -1,3 +1,8 @@
+let doSomeStuff = function() {
+    /// ....
+    /// ...
+    return [1, 2, 3];
+}
 
 let earlyComputers = {
     eniac: {
@@ -12,33 +17,30 @@ let earlyComputers = {
         yearOperational: 1943,
         mathematicians: ['Alan Turing', 'Max Newman'],
         operators: ['Dorothy Du Boisson', 'Jean Beech']
-    }
+    },
+    describe: function() {
+        console.log('This is some data about some early computers.')
+    },
+    printOccupationForComputer: function(occupation, computer) {
+        console.log(this[computer][occupation]);
+    },
+    someThing: doSomeStuff()
 };
 
-// Functions can also be properties of objects (as the value of key-value
-// pairs). These specific kinds of functions are called methods:
-
-earlyComputers.describe = function() {
-    console.log('This is a collection of data about early computers and who worked on them.');
-};
 
 earlyComputers.describe();
 
-// When we need to reference the object itself within a function, we need to use
-// the keyword 'this':
-
-earlyComputers.getEniac = function() {
-    return this.eniac;
+let printProgrammers = function() {
+    console.log(this.eniac.programmers);
 }
 
-let eniac = earlyComputers.getEniac();
+earlyComputers.printProgrammers = printProgrammers;
+earlyComputers.printProgrammers();
 
-console.log(eniac);
+let operators = 'operators'
+earlyComputers.printOccupationForComputer(operators, 'colossus');
 
-earlyComputers.getWorkers = function(computer, role) {
-    return this[computer][role];
-};
 
-let colossusOperators = earlyComputers.getWorkers('colossus', 'operators');
-console.log(colossusOperators);
+console.log(earlyComputers);
+
 

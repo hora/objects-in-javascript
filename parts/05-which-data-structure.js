@@ -8,27 +8,50 @@ let eniacDevelopers = [
     'Kay McNulty (programmer)'
 ];
 
-// We're missing the people in the photo, let's add them
+eniacDevelopers.push("Jean Jennings (programmer)");
+eniacDevelopers.push("Marlyn Wescoff (programmer)");
 
-eniacDevelopers.push('Jean Jennings (programmer)');
-eniacDevelopers.push('Marlyn Wescoff (programmer)');
-eniacDevelopers.push('Ruth Lichterman (progammer)');
 
 console.log(eniacDevelopers);
 
 // What if we wanted to know how many people worked on the ENIAC?
 
-console.log(eniacDevelopers.length);
+console.log('The number of people who worked on the ENIAC: ', eniacDevelopers.length);
 
 // What if we wanted to print to the console only the programmers?
 
-// Algorithm idea:
-//  - declare a result array
-//  - loop through all the strings in eniacDevelopers
-//      - check if the string contains the sub-string '(programmer)'
-//          - if it does, push it to the result array
-//  - print out the contents of the result array
-//
+// idea: maybe we could build an algorithm based on knowing where in the array
+// we can find our programmers
+// idea: maybe we can go through each string in the array and write some code
+// for figuring out whether they are programmers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // This is a difficult problem to solve with an array of strings.
 // Also, what if we wanted to keep track not only of their names and roles, but

@@ -1,28 +1,30 @@
 
+let eniacData = {
+    computerName: 'ENIAC',
+    yearOperational: 1945,
+    leadership: ['John Mauchly', 'J. Presper Eckert'],
+    engineers: ['J. Presper Eckert'],
+    programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Bilas', 'Kay McNulty', 'Marlyn Wescoff', 'Ruth Lictherman']
+};
+
 let earlyComputers = {
-    eniac: {
-        computerName: 'ENIAC',
-        yearOperational: 1945,
-        leadership: ['John Mauchly', 'J. Presper Eckert'],
-        engineers: ['J. Presper Eckert'],
-        programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Bilas', 'Kay McNulty', 'Marlyn Wescoff', 'Ruth Lictherman']
-    },
+    eniac: eniacData,
     colossus: {
-        computerName: 'COLOSSUS',
+        computer: 'COLOSSUS',
         yearOperational: 1943,
         mathematicians: ['Alan Turing', 'Max Newman'],
         operators: ['Dorothy Du Boisson', 'Jean Beech']
     }
-};
+}
 
-// We access objects nested inside other objects in the same way:
+console.log(earlyComputers.eniac.computerName)
 
-let eniac = earlyComputers.eniac;
+earlyComputers.eniac.computerName = 'ENIAC 2';
 
-console.log(eniac); // will log the whole object referred to by the key 'eniac'
-console.log(eniac.yearOperational); // 1945
+console.log(earlyComputers.eniac.computerName)
+console.log(eniacData.computerName)
 
-let yearOperational = earlyComputers.eniac.yearOperational;
+earlyComputers.colossus.operators.push('Somebody else')
+console.log(earlyComputers.colossus)
 
-console.log(yearOperational); // 1945
 

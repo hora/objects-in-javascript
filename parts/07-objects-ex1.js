@@ -14,27 +14,31 @@ let eniacData = {
     computer: 'ENIAC',
     yearOperational: 1945,
     leadership: ['John Mauchly', 'J. Presper Eckert'],
-    engineers: ['J. Presper Eckert'],
-    programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Bilas', 'Kay McNulty', 'Marlyn Wescoff', 'Ruth Lictherman']
+    programmers: ['Jean Jennings', 'Betty Snyder']
 };
 
-// We access data stored in 'developers' object using dot or bracket notation:
+console.log(eniacData.computer)
+console.log(eniacData['computer'])
 
-let computerName = eniacData.computer;
-let programmers = eniacData['programmers'];
+let computer = 'yearOperational';
 
-console.log(computerName);
+console.log(eniacData[computer]);
+
+let programmers = eniacData.programmers;
+
 console.log(programmers);
+console.log(programmers[0]);
 
-// We add data to an object that we first initialize as empty using dot or
-// bracket notation:
+let index;
+
+console.log(eniacData.programmers[index])
 
 let colossusData = {};
 
 colossusData.computer = 'COLOSSUS';
 colossusData['yearOperational'] = 1943;
-colossusData.mathematicians = ['Alan Turing', 'Max Newman'];
-colossusData['operators'] = ['Dorothy Du Boisson', 'Jean Beech'];
+colossusData.mathematicians = ['Alan Turing', 'Max Newman']
 
 console.log(colossusData);
+
 
