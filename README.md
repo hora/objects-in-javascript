@@ -6,13 +6,13 @@ Below you'll find some more general notes about objects. For the specific code
 we implemented in class, see the [/parts](/parts) directory. (Hint: look for
 files ending in `.js`).
 
+## Representing real-world data in JavaScript
+
 ![A black and white photo of Jean Jennings, Marlyn Wescoff, and Ruth Lichterman
 programming the ENIAC computer.](https://github.com/hora/lhl-w1d3/blob/master/lesson-planning/eniac.jpg)
 
 Jean Jennings, Marlyn Wescoff, and Ruth Licterman programming the ENIAC
 computer. Image from the University of Pennsylvania Archives.
-
-## Representing real-world data in JavaScript
 
 ```js
 // Names of the programmers in the photo, represented as strings
