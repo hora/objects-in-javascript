@@ -1,10 +1,4 @@
-let doSomeStuff = function() {
-    /// ....
-    /// ...
-    return [1, 2, 3];
-}
-
-let earlyComputers = {
+earlyComputers = {
     eniac: {
         computerName: 'ENIAC',
         yearOperational: 1945,
@@ -16,31 +10,37 @@ let earlyComputers = {
         computerName: 'COLOSSUS',
         yearOperational: 1943,
         mathematicians: ['Alan Turing', 'Max Newman'],
-        operators: ['Dorothy Du Boisson', 'Jean Beech']
+        operators: ['Dorothy Du Boisson', 'Jean Beech'],
+        getOperators: function() {
+            console.log(this.operators);
+        }
     },
-    describe: function() {
-        console.log('This is some data about some early computers.')
+    getEniac: function() {
+        console.log(this.eniac);
     },
-    printOccupationForComputer: function(occupation, computer) {
-        console.log(this[computer][occupation]);
-    },
-    someThing: doSomeStuff()
+    getWorkers: function(computer, job) {
+        console.log(this[computer][job]);
+    }
 };
 
+//earlyComputers.getEniac();
 
-earlyComputers.describe();
-
-let printProgrammers = function() {
-    console.log(this.eniac.programmers);
-}
-
-earlyComputers.printProgrammers = printProgrammers;
-earlyComputers.printProgrammers();
-
-let operators = 'operators'
-earlyComputers.printOccupationForComputer(operators, 'colossus');
+earlyComputers.colossus.getOperators();
+earlyComputers.getWorkers('eniac', 'programmers');
 
 
-console.log(earlyComputers);
+//earlyComputers.describe = function() {
+    //return 'This is a collection of data about early computers and who worked on them';
+//};
+
+//earlyComputers.describe();
+
+//let otherComputerData = {
+    //describeSomething: earlyComputers.describe()
+//};
+
+//console.log(otherComputerData.describeSomething);
+
+
 
 

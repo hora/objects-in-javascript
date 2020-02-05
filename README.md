@@ -1,5 +1,11 @@
 # Objects in JavaScript
 
+## Code examples from this morning
+
+Below you'll find some more general notes about objects. For the specific code
+we implemented in class, see the [/parts](/parts) directory. (Hint: look for
+files ending in `.js`).
+
 ![A black and white photo of Jean Jennings, Marlyn Wescoff, and Ruth Lichterman
 programming the ENIAC computer.](https://github.com/hora/lhl-w1d3/blob/master/lesson-planning/eniac.jpg)
 

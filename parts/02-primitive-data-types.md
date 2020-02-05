@@ -9,6 +9,7 @@ program. There are 7 of them:
 - boolean
 - null
 - undefined
+
 - bigint
 - symbol
 
