@@ -11,9 +11,9 @@
 
 // What will the following code print to the console?
 
-let responsibility = 'mathematicians';
+//let responsibility = 'mathematicians';
 
-console.log(colossusData[responsibility]);
+//console.log(colossusData[responsibility]);
 
 // A – undefined
 // B - ['Alan Turing', 'Max Newman']

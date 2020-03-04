@@ -1,7 +1,7 @@
 
 let earlyComputers = {
 
-    eniac : {
+    eniac: {
         computerName: 'ENIAC',
         yearOperational: 1945,
         leadership: ['John Mauchly', 'J. Presper Eckert'],
@@ -9,7 +9,7 @@ let earlyComputers = {
         programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Bilas', 'Kay McNulty', 'Marlyn Wescoff', 'Ruth Lictherman']
     },
 
-    colossus : {
+    colossus: {
         computer: 'COLOSSUS',
         yearOperational: 1943,
         mathematicians: ['Alan Turing', 'Max Newman'],
@@ -18,33 +18,12 @@ let earlyComputers = {
 
 };
 
-console.log(earlyComputers.colossus.computer);
+console.log(earlyComputers.colossus.yearOperational);
+console.log(earlyComputers.eniac.programmers[1]);
 
-console.log(earlyComputers.colossus.operators[1]);
-console.log(earlyComputers['colossus'].operators[1]);
-console.log(earlyComputers['colossus']['operators'][1]);
+let selections = process.argv.slice(2);
 
-console.log(earlyComputers.colossus.operators.length);
+console.log(selections);
 
-earlyComputers.colossus.operators.push('Somebody Else');
-
-
-console.log(earlyComputers.colossus.operators);
-
-earlyComputers.colossus.yearOperational = 1946;
-
-console.log(earlyComputers.colossus);
-
-// we can do this, but don't:
-const key = 1;
-
-const arr = ['abc', 'def'];
-arr.key = 'something';
-
-console.log(arr.key);
-
-console.log(arr);
-
-
-
+console.log(earlyComputers[selections[0]][selections[1]])
 

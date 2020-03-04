@@ -7,26 +7,22 @@ let eniacData = {
     programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Bilas', 'Kay McNulty', 'Marlyn Wescoff', 'Ruth Lictherman']
 };
 
-
-// What will the following print to the console?
-
 console.log(eniacData.computer);
-
 console.log(eniacData['computer']);
-// the following will evaluate to eniacData['ENIAC'], which will give us
-// undefined (because there's no ENIAC key)
-console.log(eniacData[eniacData.computer]);
 
-// this will throw a reference error because computer is not defined:
+// The following throws a reference error because it looks for
+// a variable called computer that is not defined:
 //console.log(eniacData[computer]);
 
-let key = 'computer';
+let key = 'computer'; 
 
 console.log(eniacData[key]);
 
+// You use dot notation when you reference the key name directly
+// If you want to access something with a key that comes from a variable, or
+// user input, or some other part of your code that you can't know directly
+// you ALWAYS have to use bracket notation
+
+console.log(eniacData.nothing);
 console.log(eniacData.key);
-
-console.log(eniacData.somethingThatDoesNotExistYet);
-
-console.log(eniacData);
 

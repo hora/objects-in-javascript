@@ -1,4 +1,3 @@
-
 let eniacDevelopers = [
     'John Mauchly (project lead)',
     'J. Presper Eckert (project lead, electrical engineer)',
@@ -13,42 +12,32 @@ let eniacDevelopers = [
 let eniacData = {
     computer: 'ENIAC',
     yearOperational: 1945,
-    programmers: ['Jean Jennings', 'Betty S', 'Frances B', 'Kay M', 'Marlyn W', 'Ruth L'],
-    leadership: ['John M', 'J. Presper E'],
-    engineers: ['J. Presper Eckert']
+    programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Biles'],
+    leadership: ['John Mauchly', 'J. Presper Eckert']
 };
 
-// log the whole object, all the ENIAC data
-//console.log(eniacData);
+// We can access the data in an object using dot notation or bracket notation
 
-// these are just the programmers
-//console.log(eniacData.programmers);
-//console.log(eniacData['programmers']);
+console.log(eniacData);
+console.log(eniacData.yearOperational);
+console.log(eniacData['yearOperational']);
+
+eniacData.programmers.push('Kay McNulty');
+
+console.log(eniacData);
+
+
+
+// We can add data to an object using dot notation or bracket notation as well
 
 let colossusData = {};
 
 colossusData.computer = 'COLOSSUS';
-colossusData.mathematicians = ['Alan Turing', 'Max Newman'];
-
-//console.log(colossusData);
-
-//colossusData.computer += ' 2';
-// JS will evalute the right side of the = operator first, which is
-// why the following code will work:
-colossusData.computer = [colossusData.computer, 'COLOSSUS 2']
-
-colossusData['operators'] = ['Dorothy Du Boisson', 'Jean Beech'];
-
-
-
-
-let yearOperational = 1943;
+colossusData['yearOperational'] = 1943;
 
 console.log(colossusData);
 
+colossusData.computer = 'COLOSSUS 2';
 
-
-
-
-
+console.log(colossusData);
 

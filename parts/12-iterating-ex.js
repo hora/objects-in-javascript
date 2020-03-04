@@ -1,4 +1,4 @@
-earlyComputers = {
+let earlyComputers = {
     eniac: {
         computerName: 'ENIAC',
         yearOperational: 1945,
@@ -11,23 +11,23 @@ earlyComputers = {
         yearOperational: 1943,
         mathematicians: ['Alan Turing', 'Max Newman'],
         operators: ['Dorothy Du Boisson', 'Jean Beech']
-    },
-    getEniac: function() {
-        return this.eniac;
-    },
-    getWorkers: function(computer, job) {
-        return this[computer][job];
     }
 };
 
-earlyComputers.describe = function() {
-    return 'This is a bunch of data about war time computers';
-};
+let eniac = earlyComputers.eniac;
 
-console.log(earlyComputers.describe());
 
-console.log(earlyComputers.getEniac());
+for (let key in earlyComputers) {
+    console.log(key);
+    console.log(earlyComputers[key]);
 
-console.log(earlyComputers.getWorkers('eniac', 'programmers'));
-console.log(earlyComputers.getWorkers('colossus', 'operators'));
+    for (let key2 in earlyComputers[key]) {
+        console.log(key2);
+        console.log(earlyComputers[key][key2]);
+    }
+}
+
+console.log(earlyComputers.length);
+
+console.log(Object.keys(earlyComputers).length);
 
