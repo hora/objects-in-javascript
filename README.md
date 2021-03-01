@@ -17,8 +17,8 @@ computer. Image from the University of Pennsylvania Archives.
 // Name of the computer in the photo, represented as a string
 "ENIAC"
 
-// The year the computer in the photo became operational, as a number and as a
-// string
+// The year the computer in the photo became operational,
+// as a number and as a string
 1945
 "1945"
 ```
@@ -47,8 +47,9 @@ but also the relationship among the data, and the operation that can be applied
 to that data.
 
 ```js
-// The names of the programmers in the photo, grouped together in an array to
-// represent their relationship: a list of programmers who worked on the ENIAC
+// The names of the programmers in the photo, grouped together
+// in an array to represent their relationship:
+// a list of programmers who worked on the ENIAC
 [
     "Jean Jennings",
     "Marlyn Wescoff",
@@ -91,9 +92,9 @@ console.log(eniacDevelopers.length);
 //
 
 // This is a difficult problem to solve with an array of strings.
-// Also, what if we wanted to keep track not only of their names and roles, but
-// other information, such as the multiple names the programmers had throughout
-// their lives?
+// Also, what if we wanted to keep track not only of their names and
+// roles, but other information as well, such as the multiple names
+// the programmers had throughout their lives?
 ```
 
 ## Enter: Objects
@@ -136,7 +137,8 @@ let eniacData = {
     programmers: ['Jean Jennings', 'Betty Snyder', 'Frances Bilas', 'Kay McNulty', 'Marlyn Wescoff', 'Ruth Lictherman']
 };
 
-// We access data stored in 'developers' object using dot or bracket notation:
+// We access data stored in 'developers' object using dot or
+// bracket notation:
 
 let computerName = eniacData.computer;
 let programmers = eniacData['programmers'];
@@ -178,8 +180,8 @@ console.log(eniacData['computer']); // ENIAC
 // The following throws an error because _computer_ is undefined:
 // console.log(eniacData[computer]);
 //
-// This is because is looks for a variable named _computer_ instead of looking
-// up the key 'computer' in the object
+// This is because is looks for a variable named _computer_
+// instead of looking up the key 'computer' in the object
 
 let key = 'computer';
 
@@ -259,8 +261,8 @@ earlyComputers.describe = function() {
 
 earlyComputers.describe();
 
-// When we need to reference the object itself within a function, we need to use
-// the keyword 'this':
+// When we need to reference the object itself within a function,
+// we need to use the keyword 'this':
 
 earlyComputers.getEniac = function() {
     return this.eniac;
