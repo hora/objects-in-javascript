@@ -1,5 +1,8 @@
 # Objects in JavaScript
 
+_Note: These are lecture notes and code examples from a lecture I prepared for
+Lighthouse Labs (W1D3)._
+
 ![A black and white photo of Jean Jennings, Marlyn Wescoff, and Ruth Lichterman
 programming the ENIAC computer.](https://github.com/hora/lhl-w1d3/blob/master/lesson-planning/eniac.jpg)
 
